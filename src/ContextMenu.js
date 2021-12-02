@@ -72,14 +72,14 @@ export default class ContextMenu extends AbstractMenu {
                     if (!this.menu) return;
                     this.menu.style.top = `${top}px`;
                     this.menu.style.left = `${left}px`;
-                    this.menu.style.opacity = 1;
+                    this.menu.style.display = 'block';
                     this.menu.style.pointerEvents = 'auto';
                 });
             });
         } else {
             wrapper(() => {
                 if (!this.menu) return;
-                this.menu.style.opacity = 0;
+                this.menu.style.display = 'none';
                 this.menu.style.pointerEvents = 'none';
             });
         }
@@ -232,7 +232,7 @@ export default class ContextMenu extends AbstractMenu {
         const inlineStyle = assign(
             {},
             style,
-            { position: 'fixed', opacity: 0, pointerEvents: 'none' }
+            { position: 'fixed', display: 'none', pointerEvents: 'none' }
         );
         const menuClassnames = cx(cssClasses.menu, className, {
             [cssClasses.menuVisible]: isVisible

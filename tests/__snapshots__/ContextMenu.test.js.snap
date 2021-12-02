@@ -22,7 +22,7 @@ exports[`ContextMenu tests does not shows when event with incorrect "id" is trig
     role="menu"
     style={
       Object {
-        "opacity": 0,
+        "display": "none",
         "pointerEvents": "none",
         "position": "fixed",
       }
@@ -54,7 +54,7 @@ exports[`ContextMenu tests does not shows when event with incorrect "id" is trig
     role="menu"
     style={
       Object {
-        "opacity": 0,
+        "display": "none",
         "pointerEvents": "none",
         "position": "fixed",
       }
@@ -86,7 +86,7 @@ exports[`ContextMenu tests shows when event with correct "id" is triggered 1`] =
     role="menu"
     style={
       Object {
-        "opacity": 0,
+        "display": "none",
         "pointerEvents": "none",
         "position": "fixed",
       }
@@ -118,7 +118,7 @@ exports[`ContextMenu tests shows when event with correct "id" is triggered 2`] =
     role="menu"
     style={
       Object {
-        "opacity": 0,
+        "display": "none",
         "pointerEvents": "none",
         "position": "fixed",
       }
